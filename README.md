@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# Conferência Digital de Bingo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi desenvolvido com o objetivo de oferecer uma solução 100% digital para a conferência de números em jogos de bingo. Construído utilizando React, ele visa modernizar a experiência do jogo, proporcionando praticidade e confiabilidade tanto para os organizadores quanto para os participantes.
 
-## Available Scripts
+Com uma interface intuitiva, o sistema permite a exibição das cartelas e a conferência automática dos números sorteados, eliminando processos manuais e otimizando a diversão do jogo.
 
-In the project directory, you can run:
+---
+
+## Funcionalidades
+
+- **Conferência Automática**: Verificação dos números sorteados diretamente nas cartelas digitais.
+- **Interface Responsiva**: Adaptação para diferentes dispositivos, como celulares, tablets e desktops.
+- **Gerenciamento de Cartelas**: Navegação simples entre múltiplas cartelas.
+- **Experiência Moderna**: Solução digital que substitui métodos manuais.
+
+---
+
+## Scripts Disponíveis
+
+No diretório do projeto, você pode executar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Inicia a aplicação no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) no navegador para visualizá-la.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A página será recarregada automaticamente ao salvar alterações no código.\
+Erros de lint também aparecerão no console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Executa o test runner no modo interativo.\
+Veja mais informações na [documentação sobre testes](https://facebook.github.io/create-react-app/docs/running-tests).
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Cria uma versão otimizada da aplicação para produção na pasta `build`.\
+Os arquivos são minificados e os nomes incluem hashes para garantir desempenho.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+A aplicação está pronta para ser implantada!
 
 ### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Nota: essa é uma operação irreversível!**\
+Se você precisar de controle total sobre as configurações do projeto, use `eject`. Este comando copiará todas as configurações e dependências para o diretório do projeto, permitindo customizações avançadas.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Como Executar o Projeto
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   ```
+2. Instale as dependências:
+   ```bash
+   npm install
+   ```
+3. Inicie a aplicação:
+   ```bash
+   npm start
+   ```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Tecnologias Utilizadas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **React**: Biblioteca principal para construção da interface.
+- **JavaScript**: Linguagem de programação utilizada.
+- **CSS**: Para estilização da interface.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contribuição
 
-### Analyzing the Bundle Size
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests com melhorias e sugestões.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Licença
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Este projeto é distribuído sob a licença MIT. Consulte o arquivo `LICENSE` para mais informações.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
