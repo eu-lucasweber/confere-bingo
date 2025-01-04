@@ -1,0 +1,46 @@
+.Header {
+    width: 50%;
+    margin-left: 25%;
+
+    & .link{
+        text-decoration: none;
+    }    
+    & .titulo {
+        margin-top: 2rem;
+        font-size: 4.5rem;
+        font-weight: 700;
+        color: #BF2607;
+    }
+    & .menu{
+        margin-left: 4rem;
+        display: flex;
+        align-items: baseline;
+        
+        & .minhasCartelas {
+            height: 2.5rem;
+            width: 12rem;
+            font-size: 1.25rem;
+            font-weight: 500;
+            border-color: #730202;
+            border-style: solid;
+            background-color: #FFFFFF;
+            color: #260101;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+.Footer {
+    margin-top: 2rem;
+    padding-top: 3rem;
+    border-top: 0.15rem #730202 solid;
+    background-color: #BF2607;
+    
+    & .link{
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,76 @@
+.minhasCartelas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    & .selecionaCartela{
+        display: flex;
+        margin-top: 1.5rem;
+        color: #730202;
+
+        & .link{
+            text-decoration: none;
+        }
+        & .menor{
+            margin-right: 1rem;
+            border: 0;
+            background-color: transparent;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #730202;
+        }
+        & .numero{
+            margin: 1rem;
+        }
+        & .maior{
+            margin-left: 1rem;
+            border: 0;
+            background-color: transparent;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #730202;
+        }
+    }
+}
+.cartela{
+    display: flex;
+    flex-direction: row;
+    border: 1px black solid;
+    font-size: 1.5rem;
+
+    & .coluna{
+
+        & .index{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0.5rem;
+            margin: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+
+        }
+        & ol{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        & .numero{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: none;
+            padding: 0.5rem;
+            margin: 0;
+            border: 1px black solid;
+            width: 2.5rem;
+            height: 2.5rem;
+
+            & img{
+                width: 100%;
+            }
+        }
+    }
+}

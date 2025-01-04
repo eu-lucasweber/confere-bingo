@@ -1,0 +1,26 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .corpo{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+
+        & .btn{
+            margin: 1.5rem;
+            height: 3.75rem;
+            width: 18rem;
+            font-size: 2rem;
+            font-weight: 500;
+            border-color: #730202;
+            border-style: solid;
+            background-color: #FFFFFF;
+            color: #260101;
+            border-radius: 0.5rem;
+        }
+    }
+}
