@@ -4,72 +4,165 @@
     flex-direction: column;
     align-items: center;
 
-    & .selecionaCartela{
+    .novaCartela{
+        width: 15rem;
+        height: 3rem;
+        border: 1px #0000ff solid;
+        border-radius: 0.5rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin: 1rem;
+        cursor: pointer;
+        background-color: #ffffff;
+        color: #0000ff;
         display: flex;
-        margin-top: 1.5rem;
-        color: #730202;
-
-        & .link{
-            text-decoration: none;
-        }
-        & .menor{
-            margin-right: 1rem;
-            border: 0;
-            background-color: transparent;
-            font-size: 2rem;
-            font-weight: 600;
-            color: #730202;
-        }
-        & .numero{
-            margin: 1rem;
-        }
-        & .maior{
-            margin-left: 1rem;
-            border: 0;
-            background-color: transparent;
-            font-size: 2rem;
-            font-weight: 600;
-            color: #730202;
+        align-items: center;
+        justify-content: center;
+    
+        & .icon{
+            padding: 0 0.5rem 0 0;
+            font-size: 1.25rem;
         }
     }
-}
-.cartela{
-    display: flex;
-    flex-direction: row;
-    border: 1px black solid;
-    font-size: 1.5rem;
 
-    & .coluna{
+    .cartelas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
-        & .index{
+        & .cartela{
             display: flex;
-            align-items: center;
-            justify-content: center;
-            list-style-type: none;
-            padding: 0.5rem;
-            margin: 0;
-            width: 2.5rem;
-            height: 2.5rem;
-
-        }
-        & ol{
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        & .numero{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            list-style-type: none;
-            padding: 0.5rem;
-            margin: 0;
+            flex-wrap: nowrap;
             border: 1px black solid;
-            width: 2.5rem;
-            height: 2.5rem;
+            
+            & .coluna{
+                font-size: 1.5rem;
 
-            & img{
-                width: 100%;
+                & .index{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    list-style-type: none;
+                    padding: 0.5rem;
+                    margin: 0;
+                    width: 2.5rem;
+                    height: 2.5rem;
+        
+                }
+                & ol{
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                & .numero{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    list-style-type: none;
+                    padding: 0.5rem;
+                    margin: 0;
+                    border: 1px black solid;
+                    width: 2.5rem;
+                    height: 2.5rem;
+        
+                    & img{
+                        width: 100%;
+                    }
+                }
+                & .edit{
+                    padding: 0rem;
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    background-color: #ffffff;
+        
+                    & .input{
+                        width: 2rem;
+                        height: 2rem;
+                        font-size: 1.5rem;
+                        text-align: center;
+                        border: 0;
+                    }
+                    & .input[type="number"]::-webkit-inner-spin-button, 
+                    & .input[type="number"]::-webkit-outer-spin-button {
+                        -webkit-appearance: none;
+                    }
+                    & img{
+                        width: 2.5rem;
+                    }
+                }
+            }   
+        }
+        & .subMenu{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+            
+            & button{
+                width: 8rem;
+                height: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px black solid;
+                border-radius: 0.5rem;
+                font-weight: 700;
+                font-size: 1rem;
+                margin: 0 1.25rem;
+                cursor: pointer;
+                background-color: #ffffff;
+
+                & .icon{
+                    padding: 0 0.5rem 0 0;
+                    font-size: 1.25rem;
+                }
+            }
+            & .editar{
+                color: #008000;
+                border-color: #008000;
+            }
+            & .excluir{
+                color: #ff0000;
+                border-color: #ff0000;
+            }
+            & .salvar{
+                color: #008000;
+                border-color: #008000;
+            }
+            & .cancelar{
+                color: #ff0000;
+                border-color: #ff0000;
+            }
+        }
+        & .selecionaCartela{
+            display: flex;
+            margin-top: 1.5rem;
+            color: #730202;
+
+            & button{
+                cursor: pointer;
+            }
+
+            & .link{
+                text-decoration: none;
+            }
+            & .menor{
+                margin-right: 1rem;
+                border: 0;
+                background-color: transparent;
+                font-size: 2rem;
+                font-weight: 600;
+                color: #730202;
+            }
+            & .numero{
+                margin: 1rem;
+            }
+            & .maior{
+                margin-left: 1rem;
+                border: 0;
+                background-color: transparent;
+                font-size: 2rem;
+                font-weight: 600;
+                color: #730202;
             }
         }
     }

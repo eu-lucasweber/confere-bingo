@@ -3,6 +3,7 @@ import Header from './components/Parts/Header';
 import Footer from './components/Parts/Footer';
 import Home from './components/Home/Home';
 import MinhasCartelas from './components/Cartela/MinhasCartelas'
+import NovaCartela from './components/Cartela/NovaCartela'
 import './App.css';
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
         <Header />
           <Routes>
             <Route exact path="/" element={<Home/>} />
-            <Route path="/minhasCartelas" element={<MinhasCartelas/>} />
             <Route path="/novoJogo" element={<Home/>} />
             <Route path="/continuarJogo" element={<Home/>} />
+            <Route path="/minhasCartelas/:id" element={<MinhasCartelas editar={true} />} />
+            <Route path="/minhasCartelas/editar/:id" element={<MinhasCartelas editar={false} />} />
+            <Route path="/minhasCartelas/nova" element={<NovaCartela />} />
           </Routes>
         <Footer />
       </Router>

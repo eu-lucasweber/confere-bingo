@@ -1,8 +1,9 @@
+import React, { useRef } from 'react';
 import './Cartela.css'
 
-const Cartela = ({ cartela }) => {
+const CartelaEdit = ({ cartela }) => {
     const coluna = ['b', 'i', 'n', 'g', 'o'];
-  
+      
     // Verifica se a cartela é válida
     if (!cartela || Object.keys(cartela).length === 0) {
       return <p>Cartela não disponível.</p>;
@@ -15,7 +16,13 @@ const Cartela = ({ cartela }) => {
                 <h3 className='index'>{c.toUpperCase()}</h3>
                 <ol>
                 {cartela[c].map((numero) => (
-                        <li className='numero'>{(numero > 0) ? numero:(<img src="/indio.png"/>)}</li>
+                        <li className='numero edit'>
+                            {(numero > 0 || numero == null) ? 
+                                <input className='input' name={c+numero} type='number' defaultValue={numero}/>
+                            :
+                                (<img src="/indio.png"/>)
+                            }
+                        </li>
                 ))}
                 </ol>
             </div>
@@ -24,4 +31,5 @@ const Cartela = ({ cartela }) => {
     );
   };
   
-  export default Cartela;
+  export default CartelaEdit;
+  
